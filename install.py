@@ -1,6 +1,7 @@
 #!/usr/bin/python
 import os
 import sys
+import shutil
 
 class Rror(Exception):
     def __init__(*args,**kwargs):
@@ -29,6 +30,6 @@ assert sys.platform in ('linux','linux2'), 'This script must be run on linux!'
 # Move configs
 
 
-# Install APPS (sync and self-info)
+# Install APPS (conf-sync and self-info)
 
 
