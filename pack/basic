@@ -30,6 +30,7 @@ python
 python-blessed
 python-dbus
 python-django
+python-matplotlib
 python-numpy
 python-psutil
 python-pyglet
