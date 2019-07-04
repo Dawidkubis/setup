@@ -122,11 +122,14 @@ hc keybind $Mod-i jumpto urgent
 # background
 feh --bg-scale $HOME/.config/herbstluftwm/background.jpg 
 
+# app killing
+hc spawn killall -s QUIT compton redshift glava conky
+
 # app spawning
-hc spawn $HOME/.config/herbstluftwm/run compton -b
-hc spawn $HOME/.config/herbstluftwm/run redshift -l 50.08804:14.42076
-hc spawn $HOME/.config/herbstluftwm/run glava -d
-hc spawn $HOME/.config/herbstluftwm/run conky
+hc spawn compton -b
+hc spawn redshift -l 50.08804:14.42076
+hc spawn glava -d
+hc spawn conky
 #hc spawn $HOME/.config/herbstluftwm/run conky -c ~/.config/conky/notifications.conf
 hc spawn amixer sset Beep mute
 hc spawn xset b off
