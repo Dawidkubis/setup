@@ -9,7 +9,6 @@ compton
 conky
 cython
 feh
-firefox
 fish
 flameshot
 fzf
@@ -41,11 +40,13 @@ python-sympy
 python-systemd
 python-termcolor
 python-utils
+qutebrowser
 redshift
 rofi
 rustup
 steam
 termite
+ttf-dejavu
 udevil
 vifm
 vlc
