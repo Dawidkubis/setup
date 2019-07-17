@@ -123,11 +123,10 @@ hc keybind $Mod-i jumpto urgent
 feh --bg-scale $HOME/.config/herbstluftwm/background.jpg 
 
 # app killing
-hc spawn killall -s QUIT compton redshift glava conky flameshot
+hc spawn killall -s QUIT compton glava conky flameshot
 
 # app spawning
 hc spawn compton -b
-hc spawn redshift -l 50.08804:14.42076
 hc spawn glava -d
 hc spawn conky
 hc spawn flameshot
