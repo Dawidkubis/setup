@@ -15,6 +15,7 @@ git
 glava
 herbstluftwm
 htop
+mplayer
 neovim
 networkmanager
 nim
@@ -42,7 +43,6 @@ python-systemd
 python-termcolor
 python-utils
 qutebrowser
-redshift
 rofi
 rustup
 steam
@@ -50,7 +50,6 @@ termite
 ttf-dejavu
 udevil
 vifm
-mplayer
 wine
 wpa_supplicant
 xsel
