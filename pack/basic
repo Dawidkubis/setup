@@ -1,6 +1,5 @@
 alsa-firmware
 alsa-utils
-alsa-utils
 aria2
 atom
 base
@@ -51,11 +50,9 @@ termite
 ttf-dejavu
 udevil
 vifm
-vlc
+mplayer
 wine
 wpa_supplicant
-xorg-apps
-xorg-server
 xsel
 youtube-dl
 zathura
