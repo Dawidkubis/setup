@@ -27,8 +27,9 @@ call(['pacman', '-S', '-'], stdin=BASE_PKG)
 if LAPTOP:
     call(['pacman', '-S', '-'], stdin=LAPTOP_PKG)
 
-# Create directories
+print()
 
+# Create directories
 dirs = [os.path.join(str(HOME), i) for i in ('.config/', 'git/', 'Downloads/', 'bin/')]
 
 for i in dirs:
@@ -37,5 +38,8 @@ for i in dirs:
         os.mkdir(i)
 
 # Move configs
-
-
+os.chdir('configs/base')
+for i in os.listdir():
+    for x in os.listdir(i):
+        print(f'copying {x} to {HOME}/.config/{i}/{x}')
+        shutil.copy(x, os.path.join(HOME, '.config/', i, x))
