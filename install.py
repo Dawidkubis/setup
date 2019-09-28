@@ -2,31 +2,40 @@
 import os
 import sys
 import shutil
+from subprocess import call
+
+BASE_PKG = open('pack/basic', 'r')
+LAPTOP_PKG = open('pack/laptop', 'r')
 
 class Rror(Exception):
-    def __init__(*args,**kwargs):
-        super().__init__(*args, **kwargs)
-        self.args = args
-        self.kwargs = kwargs
+    def __init__(msg):
+        self.msg = msg
 
-# Check if have root priviledges
-assert os.environ['USER'] == 'root', 'This script must be run as root!'
-
-# Check if on linux
-assert sys.platform in ('linux','linux2'), 'This script must be run on linux!'
+# Ask about user
+USER = input('user : ')
+assert USER in os.listdir('/home/'), f'user {USER} does not exist or doesnt have a home directory'
+HOME = os.path.join('/home', f'{USER}')
 
 # Ask about platform
-
+LAPTOP = input('configure for laptop?(y/n) : ').lower()
+assert LAPTOP in ('y', 'n')
+LAPTOP = True if LAPTOP == 'y' else False
 
 # Install packages
+print('installing packages')
+call(['pacman', '-S', '-'], stdin=BASE_PKG)
+if LAPTOP:
+    call(['pacman', '-S', '-'], stdin=LAPTOP_PKG)
 
+# Create directories
 
-# Install configs
+dirs = [os.path.join(str(HOME), i) for i in ('.config/', 'git/', 'Downloads/', 'bin/')]
 
+for i in dirs:
+    if not os.path.isdir(i):
+        print(f'path {i} not found, creating...')
+        os.mkdir(i)
 
 # Move configs
-
-
-# Install APPS (conf-sync and self-info)
 
 
