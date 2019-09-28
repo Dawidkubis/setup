@@ -31,8 +31,8 @@ hc keybind XF86MonBrightnessUp spawn xbacklight -inc 10
 hc keybind XF86AudioPlay spawn playerctl play-pause
 hc keybind XF86AudioNext spawn playerctl next
 hc keybind XF86AudioPrev spawn playerctl previous
-hc keybind XF86AudioLowerVolume spawn pamixer -d 1
-hc keybind XF86AudioRaiseVolume spawn pamixer -i 1
+hc keybind XF86AudioLowerVolume spawn pamixer -d 5
+hc keybind XF86AudioRaiseVolume spawn pamixer -i 5 
 hc keybind XF86AudioMute spawn pamixer -t 
 hc keybind Print spawn flameshot gui
 

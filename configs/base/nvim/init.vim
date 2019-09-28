@@ -20,7 +20,6 @@ autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 nnoremap <F2> :NERDTreeToggle <CR>
 nnoremap <Tab> :tabNext <CR>
-nnoremap <F3> :!pandoc % -o
 nnoremap <C-Space> @q
 let g:airline_theme='base16' 
 

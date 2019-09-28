@@ -21,9 +21,6 @@ assert sys.platform in ('linux','linux2'), 'This script must be run on linux!'
 # Install packages
 
 
-# Install aur
-
-
 # Install configs
 
 
