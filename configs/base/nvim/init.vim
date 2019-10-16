@@ -13,14 +13,21 @@ Plug 'scrooloose/nerdtree'
 Plug 'morhetz/gruvbox'
 Plug 'rust-lang/rust.vim'
 Plug 'sebastianmarkow/deoplete-rust'                                                           
+Plug 'tpope/vim-fugitive'
+Plug 'scrooloose/nerdcommenter'
 
 call plug#end()
 
 autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
 inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 nnoremap <F2> :NERDTreeToggle <CR>
+nnoremap <F5> :edit <CR>
 nnoremap <Tab> :tabNext <CR>
 nnoremap <C-Space> @q
+set mouse=a
+set clipboard+=unnamedplus
+filetype plugin on
+
 let g:airline_theme='base16' 
 
 let g:deoplete#sources#rust#racer_binary='/sbin/racer'                                         

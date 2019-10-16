@@ -3,6 +3,7 @@ alsa-utils
 aria2
 base
 base-devel
+bat
 compton
 conky
 feh
@@ -30,6 +31,7 @@ pulsemixer
 python
 qutebrowser
 ranger
+ripgrep
 rofi
 rustup
 termite
