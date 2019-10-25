@@ -4,16 +4,10 @@ aria2
 base
 base-devel
 bat
-compton
-conky
 feh
 fish
-flameshot
 fzf
-gimp
 git
-glava
-herbstluftwm
 htop
 imagemagick
 mplayer
@@ -29,7 +23,6 @@ pulseaudio-alsa
 pulseaudio-jack
 pulsemixer
 python
-qutebrowser
 ranger
 ripgrep
 rofi
