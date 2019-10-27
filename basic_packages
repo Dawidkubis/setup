@@ -5,11 +5,13 @@ base
 base-devel
 bat
 feh
+figlet
 fish
 fzf
 git
 htop
 imagemagick
+kitty
 mplayer
 neovim
 networkmanager
@@ -27,7 +29,6 @@ ranger
 ripgrep
 rofi
 rustup
-termite
 texlive-most
 ttf-dejavu
 udevil
