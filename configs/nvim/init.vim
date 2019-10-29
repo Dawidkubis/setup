@@ -8,10 +8,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'scrooloose/nerdcommenter'
 
 " autocompletion
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'zchee/deoplete-jedi'
-Plug 'sebastianmarkow/deoplete-rust'                                                           
 Plug 'rust-lang/rust.vim'
+Plug 'maralla/completor.vim'
 
 " looks
 Plug 'vim-airline/vim-airline'
@@ -20,14 +18,18 @@ Plug 'drewtempelmeyer/palenight.vim'
 
 call plug#end()
 
-" deoplete settings
-autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+" autocomplete bindings
+"autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
+"inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
 
 " custom keybinds
 nnoremap <F2> :NERDTreeToggle <CR>
 nnoremap <F5> :edit <CR>
-nnoremap <Tab> :tabNext <CR>
+nnoremap <Tab> :tabnext <CR>
+nnoremap <S-Tab> :tabprevious <CR>
 nnoremap <C-Space> @q
 
 " neovim settings
@@ -36,11 +38,11 @@ set clipboard+=unnamedplus
 filetype plugin on
 set termguicolors
 
-" deoplete settings
+" autocomplete settings
 let g:rustfmt_autosave = 1
-let g:deoplete#sources#rust#racer_binary='/sbin/racer'                                         
-let g:deoplete#sources#rust#rust_source_path='/home/dawidkubis/.rust/rust/src'                 
-let g:deoplete#enable_at_startup = 1
+
+let g:completor_python_binary = '/sbin/python'
+let g:completor_racer_binary = '/home/dawidkubis/.cargo/bin/racer'
 
 " looks settings
 let g:palenight_terminal_italics=1
