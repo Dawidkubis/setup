@@ -31,8 +31,8 @@ nnoremap <F5> :edit <CR>
 nnoremap <Tab> :tabnext <CR>
 nnoremap <S-Tab> :tabprevious <CR>
 nnoremap <C-Space> @q
-nmap <silent><C-\> <plug>NERDCommenterToggle
-vmap <silent><C-\> <plug>NERDCommenterToggle
+nmap <silent><leader><space> <plug>NERDCommenterToggle
+vmap <silent><leader><space> <plug>NERDCommenterToggle
 
 " neovim settings
 set mouse=a
