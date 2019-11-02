@@ -31,6 +31,8 @@ nnoremap <F5> :edit <CR>
 nnoremap <Tab> :tabnext <CR>
 nnoremap <S-Tab> :tabprevious <CR>
 nnoremap <C-Space> @q
+nmap <silent><C-\> <plug>NERDCommenterToggle
+vmap <silent><C-\> <plug>NERDCommenterToggle
 
 " neovim settings
 set mouse=a
@@ -41,6 +43,7 @@ set termguicolors
 " autocomplete settings
 let g:rustfmt_autosave = 1
 
+let g:completor_css_omni_trigger = '([\w-]+|@[\w-]*|[\w-]+:\s*[\w-]*)$'
 let g:completor_python_binary = '/sbin/python'
 let g:completor_racer_binary = '/home/dawidkubis/.cargo/bin/racer'
 
