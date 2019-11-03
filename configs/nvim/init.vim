@@ -37,6 +37,7 @@ vmap <silent><leader><space> <plug>NERDCommenterToggle
 " neovim settings
 set mouse=a
 set clipboard+=unnamedplus
+set number
 filetype plugin on
 set termguicolors
 
