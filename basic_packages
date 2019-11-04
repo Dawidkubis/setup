@@ -1,9 +1,11 @@
+alacritty
 alsa-firmware
 alsa-utils
 aria2
 base
 base-devel
 bat
+exa
 feh
 figlet
 fish
@@ -11,8 +13,8 @@ fzf
 git
 htop
 imagemagick
-kitty
 mplayer
+neofetch
 neovim
 networkmanager
 p7zip
@@ -32,7 +34,6 @@ rustup
 texlive-most
 ttf-dejavu
 udevil
-wine
 wpa_supplicant
 xsel
 youtube-dl
