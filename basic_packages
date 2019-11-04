@@ -30,6 +30,7 @@ python
 ranger
 ripgrep
 rofi
+rsync
 rustup
 texlive-most
 ttf-dejavu
