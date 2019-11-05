@@ -1,4 +1,4 @@
-alacritty
+kitty
 alsa-firmware
 alsa-utils
 aria2
@@ -35,7 +35,6 @@ rustup
 texlive-most
 ttf-dejavu
 udevil
-w3m
 wpa_supplicant
 xsel
 youtube-dl
