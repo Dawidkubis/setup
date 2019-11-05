@@ -5,5 +5,5 @@ set -xU EDITOR nvim
 alias ll "exa -l"
 alias la "exa -la"
 alias diff "diff --color=always"
-
-neofetch
+alias icat "kitty +kitten icat"
+alias neofetch "neofetch --kitty ~/.config/neofetch/kliszmoszek.png"
