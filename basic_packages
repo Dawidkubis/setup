@@ -1,4 +1,3 @@
-kitty
 alsa-firmware
 alsa-utils
 aria2
@@ -13,6 +12,7 @@ fzf
 git
 htop
 imagemagick
+kitty
 mplayer
 neofetch
 neovim
@@ -27,12 +27,12 @@ pulseaudio-alsa
 pulseaudio-jack
 pulsemixer
 python
+python-pillow
 ranger
 ripgrep
 rofi
 rsync
 rustup
-texlive-most
 ttf-dejavu
 udevil
 wpa_supplicant
