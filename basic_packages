@@ -12,7 +12,8 @@ fzf
 git
 htop
 imagemagick
-kitty
+alacritty
+picom
 mplayer
 neofetch
 neovim
