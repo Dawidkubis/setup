@@ -1,12 +1,13 @@
-install: packages configs
-
-laptop: l_packages
-
-configs: config
-	rsync -vhrl config/ ~/.config/
-
-packages: basic_packages
+basic_packages: basic_packages
 	sudo pacman -Sy --noconfirm - < basic_packages
 
-l_packages:
-	sudo pacman -Sy --noconfirm - < laptop_packages
+laptop_packages: laptop_packages
+	sudo pacman -Sy --noconfirm - < basic_packages
+
+nvim: nvim/
+	rsync --vhrl nvim/ ~/.config/nvim/
+	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+herbstluftwm: herbstluftwm/
+	rsync --vhrl herbstluftwm ~/.config/herbstluftwm
