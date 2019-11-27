@@ -42,8 +42,6 @@ filetype plugin on
 set termguicolors
 
 " autocomplete settings
-let g:rustfmt_autosave = 1
-
 let g:completor_css_omni_trigger = '([\w-]+|@[\w-]*|[\w-]+:\s*[\w-]*)$'
 let g:completor_python_binary = '/sbin/python'
 let g:completor_racer_binary = '/home/dawidkubis/.cargo/bin/racer'
