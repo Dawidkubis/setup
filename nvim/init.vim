@@ -38,6 +38,7 @@ vmap <silent><leader><space> <plug>NERDCommenterToggle
 set mouse=a
 set clipboard+=unnamedplus
 set number
+set noet ci pi sts=0 sw=4 ts=4
 filetype plugin on
 set termguicolors
 
