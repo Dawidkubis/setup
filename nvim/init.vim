@@ -34,14 +34,6 @@ nnoremap <C-Space> @q
 nmap <silent><leader><space> <plug>NERDCommenterToggle
 vmap <silent><leader><space> <plug>NERDCommenterToggle
 
-" neovim settings
-set mouse=a
-set clipboard+=unnamedplus
-set number
-set noet ci pi sts=0 sw=4 ts=4
-filetype plugin on
-set termguicolors
-
 " autocomplete settings
 let g:completor_css_omni_trigger = '([\w-]+|@[\w-]*|[\w-]+:\s*[\w-]*)$'
 let g:completor_python_binary = '/sbin/python'
@@ -52,3 +44,11 @@ let g:palenight_terminal_italics=1
 let g:airline_theme='palenight'
 set background=dark
 colorscheme palenight
+
+" neovim settings
+set mouse=a
+set clipboard+=unnamedplus
+set number
+set noet ci pi sts=0 sw=4 ts=4
+set termguicolors
+filetype plugin off
