@@ -22,6 +22,18 @@ super + Escape
 XF86AudioPlay
 	playerctl play-pause
 
+# volume up
+XF86AudioRaiseVolume
+	pamixer -i 5
+
+# volume down
+XF86AudioLowerVolume
+	pamixer -d 5
+
+# toggle mute
+XF86AudioMute
+	pamixer -t
+
 # sceenshot
 Print
 	flameshot gui
