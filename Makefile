@@ -10,6 +10,9 @@ nvim: nvim/
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 herbstluftwm: herbstluftwm/
-	rsync -vhrl herbstluftwm ~/.config/herbstluftwm
+	rsync -vhrl herbstluftwm/ ~/.config/herbstluftwm/
 
-.PHONY: nvim herbstluftwm
+fish: fish/
+	rsync -vhrl fish/ ~/.config/fish/
+
+.PHONY: nvim herbstluftwm fish 
