@@ -16,6 +16,6 @@ fish: fish/
 	rsync -vhrl fish/ ~/.config/fish/
 
 bspwm: bspwm/
-	rsync -vhrl bspwm/ ~/.config/bspwm
+	rsync -vhrl bspwm/ ~/.config/bspwm/
 
 .PHONY: nvim herbstluftwm fish bspwm
