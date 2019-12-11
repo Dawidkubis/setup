@@ -1,3 +1,4 @@
+alacritty
 aria2
 base
 base-devel
@@ -10,8 +11,6 @@ fzf
 git
 htop
 imagemagick
-alacritty
-picom
 mplayer
 neofetch
 neovim
@@ -20,10 +19,12 @@ p7zip
 pamixer
 pandoc
 parted
+picom
 playerctl
 pulseaudio
 pulsemixer
 python
+python-pynvim
 ranger
 ripgrep
 rofi
