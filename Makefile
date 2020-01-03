@@ -18,4 +18,4 @@ fish: fish/
 bspwm: bspwm/
 	rsync -vhrl bspwm/ ~/.config/bspwm/
 
-.PHONY: nvim herbstluftwm fish bspwm
+.PHONY: nvim herbstluftwm fish bspwm basic_packages laptop_packages
