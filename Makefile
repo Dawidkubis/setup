@@ -15,7 +15,10 @@ herbstluftwm: herbstluftwm/
 fish: fish/
 	rsync -vhrl fish/ ~/.config/fish/
 
-bspwm: bspwm/
+bspwm: bspwm/ sxhkd
 	rsync -vhrl bspwm/ ~/.config/bspwm/
 
-.PHONY: nvim herbstluftwm fish bspwm basic_packages laptop_packages
+sxhkd: sxhkd/
+	rsync -vhrl sxhkd/ ~/.config/sxhkd/
+
+.PHONY: nvim herbstluftwm fish bspwm basic_packages laptop_packages sxhkd

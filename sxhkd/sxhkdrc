@@ -34,9 +34,21 @@ XF86AudioLowerVolume
 XF86AudioMute
 	pamixer -t
 
+# brightness up
+XF86MonBrightnessUp
+	xbacklight -inc 10
+
+# brightness down
+XF86MonBrightnessDown
+	xbacklight -dec 10
+
 # sceenshot
 Print
 	flameshot gui
+
+# screencast
+super + Print
+	peek
 
 # quit/restart bspwm
 super + alt + {q,r}
