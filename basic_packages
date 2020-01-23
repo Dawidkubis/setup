@@ -1,16 +1,15 @@
 alacritty
 aria2
-flameshot
 bat
 exa
 feh
 figlet
 fish
+flameshot
 fzf
 git
 htop
 imagemagick
-vlc
 neovim
 networkmanager
 p7zip
@@ -30,6 +29,7 @@ rsync
 rustup
 ttf-dejavu
 udevil
+vlc
 wpa_supplicant
 xsel
 youtube-dl
