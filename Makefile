@@ -21,4 +21,7 @@ sxhkd: sxhkd/
 alacritty: alacritty/
 	rsync -vhrl alacritty/ ~/.config/alacritty/
 
-.PHONY: nvim herbstluftwm fish bspwm basic_packages laptop_packages sxhkd alacritty
+conky: conky/
+	rsync -vhrl conky/ ~/.config/conky/
+
+.PHONY: nvim herbstluftwm fish bspwm basic_packages laptop_packages sxhkd alacritty conky
