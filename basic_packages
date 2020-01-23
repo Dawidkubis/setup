@@ -1,8 +1,6 @@
 alacritty
 aria2
 flameshot
-base
-base-devel
 bat
 exa
 feh
@@ -12,8 +10,7 @@ fzf
 git
 htop
 imagemagick
-mplayer
-neofetch
+vlc
 neovim
 networkmanager
 p7zip
