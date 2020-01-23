@@ -18,4 +18,7 @@ bspwm: bspwm/ sxhkd fish
 sxhkd: sxhkd/
 	rsync -vhrl sxhkd/ ~/.config/sxhkd/
 
-.PHONY: nvim herbstluftwm fish bspwm basic_packages laptop_packages sxhkd
+alacritty: alacritty/
+	rsync -vhrl alacritty/ ~/.config/alacritty/
+
+.PHONY: nvim herbstluftwm fish bspwm basic_packages laptop_packages sxhkd alacritty
