@@ -1,9 +1,6 @@
 basic_packages: basic_packages
 	sudo pacman -Sy --noconfirm - < basic_packages
 
-laptop_packages: laptop_packages
-	sudo pacman -Sy --noconfirm - < basic_packages
-
 nvim: nvim/ fish
 	rsync -vhrl nvim/ ~/.config/nvim/
 	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
