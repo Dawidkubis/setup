@@ -1,7 +1,11 @@
 alacritty
+arandr
 aria2
 bat
+cron
+dunst
 exa
+fd
 feh
 figlet
 fish
@@ -27,6 +31,7 @@ ripgrep
 rofi
 rsync
 rustup
+texlive-most
 ttf-dejavu
 udevil
 vlc

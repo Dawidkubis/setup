@@ -6,6 +6,10 @@
 super + Return
 	alacritty
 
+# terminal + ranger
+super + shift + Return
+	alacritty -e "ranger"
+
 # program launcher
 super + e
 	rofi -show run
@@ -17,6 +21,14 @@ super + Escape
 #
 # bspwm hotkeys
 #
+
+# previous
+XF86AudioPrev
+	playerctl previous
+
+# next
+XF86AudioNext
+	playerctl next
 
 # play and pause
 XF86AudioPlay
