@@ -8,6 +8,7 @@ call plug#begin()
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-commentary'
 
 " autocompletion
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -25,8 +26,7 @@ Plug 'cespare/vim-toml'
 call plug#end()
 
 " autocomplete bindings
-inoremap <silent><expr> <Tab>
-    \ pumvisible() ? "\<C-n>" : deoplete#manual_complete()
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " custom keybinds
 nnoremap <F2> :NERDTreeToggle <CR>
