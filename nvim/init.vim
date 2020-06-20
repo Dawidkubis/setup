@@ -1,3 +1,6 @@
+" leader
+let mapleader = ","
+
 " Plug
 call plug#begin()
 
@@ -5,25 +8,25 @@ call plug#begin()
 Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
-Plug 'scrooloose/nerdcommenter'
 
 " autocompletion
-Plug 'rust-lang/rust.vim'
-Plug 'maralla/completor.vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
+Plug 'racer-rust/vim-racer'
 
 " looks
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'drewtempelmeyer/palenight.vim'
 
+"syntax highlighting
+Plug 'cespare/vim-toml'
+
 call plug#end()
 
 " autocomplete bindings
-"autocmd InsertLeave,CompleteDone * if pumvisible() == 0 | pclose | endif
-inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<cr>"
+inoremap <silent><expr> <Tab>
+    \ pumvisible() ? "\<C-n>" : deoplete#manual_complete()
 
 " custom keybinds
 nnoremap <F2> :NERDTreeToggle <CR>
@@ -31,13 +34,15 @@ nnoremap <F5> :edit <CR>
 nnoremap <Tab> :tabnext <CR>
 nnoremap <S-Tab> :tabprevious <CR>
 nnoremap <C-Space> @q
-nmap <silent><leader><space> <plug>NERDCommenterToggle
-vmap <silent><leader><space> <plug>NERDCommenterToggle
+map <leader>h :noh<CR>
+map <leader>l :!pdflatex %<CR><CR>
 
 " autocomplete settings
-let g:completor_css_omni_trigger = '([\w-]+|@[\w-]*|[\w-]+:\s*[\w-]*)$'
-let g:completor_python_binary = '/sbin/python'
-let g:completor_racer_binary = '/home/dawidkubis/.cargo/bin/racer'
+let g:deoplete#enable_at_startup = 1
+set hidden
+let g:racer_cmd = "/home/dawidkubis/.cargo/bin/racer"
+let g:racer_insert_paren = 0
+set completeopt-=preview
 
 " looks settings
 let g:palenight_terminal_italics=1
@@ -49,6 +54,12 @@ colorscheme palenight
 set mouse=a
 set clipboard+=unnamedplus
 set number
-set noet ci pi sts=0 sw=4 ts=4
 set termguicolors
-filetype plugin off
+syntax enable
+
+" indentation
+set tabstop=4
+set shiftwidth=4
+set noexpandtab
+
+filetype plugin indent off
