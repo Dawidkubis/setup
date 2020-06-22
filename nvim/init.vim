@@ -20,8 +20,11 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'drewtempelmeyer/palenight.vim'
 
-"syntax highlighting
+" syntax highlighting
 Plug 'cespare/vim-toml'
+
+" language support
+Plug 'rust-lang/rust.vim'
 
 call plug#end()
 
