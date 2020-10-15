@@ -84,10 +84,10 @@ scrolling:
 # Font configuration (changes require restart)
 font:
   normal:
-    family: Deja Vu Sans Mono
+    family: Hack 
     style: regular
   bold:
-    family: Deja Vu Sans Mono
+    family: Hack 
     style: bold
   # Normal (roman) font face
   #normal:

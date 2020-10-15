@@ -2,8 +2,10 @@
 
 # spawning processes
 sxhkd &
-picom -b&
-conky -q&
+picom -b &
+xsetroot -cursor_name left_ptr
+#conky -q &
+#sstop 5 &
 
 # background
 feh --bg-scale ~/background.jpg
